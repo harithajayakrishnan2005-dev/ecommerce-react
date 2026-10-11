@@ -1,0 +1,151 @@
+
+
+.product-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+    position:relative;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+
+
+.image-section{
+    position:relative;
+    padding:20px;
+    text-align:center;
+}
+
+.product-image{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    transition:.3s;
+}
+
+.product-card:hover .product-image{
+    transform:scale(1.05);
+}
+/* //zoom */
+
+.wishlist-btn{
+    position:absolute;
+    /*  above of img */
+    top:12px;
+    /* spacing */
+    right:12px;
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.wishlist-btn:hover{
+    background:#ff3535;
+}
+
+.wishlist-btn:hover .heart{
+    color:#fff;
+}
+
+.heart{
+    font-size:22px;
+    color:#333;
+    transition:.3s;
+}
+
+.heart.red{
+    color:red;
+}
+
+
+.card-content{
+    padding:18px;
+    text-align:center;
+}
+
+.card-content h5{
+    font-size:18px;
+    font-weight:600;
+    color:#333;
+    min-height:45px;
+    margin-bottom:10px;
+}
+
+.card-content h6{
+    font-size:22px;
+    color:#ff6b35;
+    margin-bottom:18px;
+}
+
+
+
+.cart-btn{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#ff6b35;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    margin-bottom:10px;
+}
+
+.cart-btn:hover{
+    background:#e85a28;
+}
+
+.details-btn{
+    display:block;
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    text-decoration:none;
+    text-align:center;
+    background:#212529;
+    color:#fff;
+    font-weight:600;
+    transition:.3s;
+}
+
+.details-btn:hover{
+    background:#000;
+    color:#fff;
+}
+
+
+@media(max-width:768px){
+
+    .product-image{
+        height:180px;
+    }
+
+    .card-content h5{
+        font-size:16px;
+    }
+
+    .card-content h6{
+        font-size:18px;
+    }
+
+}

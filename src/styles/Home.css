@@ -1,0 +1,291 @@
+
+.home{
+    width:100%;
+}
+
+
+.hero{
+    height:85vh;
+    background:url("https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:1;
+    max-width:700px;
+    padding:20px;
+}
+
+.hero-tag{
+    display:inline-block;
+    background:#ff6b35;
+    color:white;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+.hero p{
+    font-size:20px;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+.shop-btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:#ff6b35;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.shop-btn:hover{
+    background:#e95a26;
+    color:white;
+    transform:translateY(-4px);
+}
+
+
+
+.categories{
+    padding:70px 8%;
+    background:#fafafa;
+}
+
+.categories h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+.category-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.category-card{
+    background:white;
+    text-align:center;
+    padding:35px 20px;
+    border-radius:15px;
+    text-decoration:none;
+    color:#333;
+    font-size:45px;
+    transition:.3s;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.category-card h3{
+    margin-top:15px;
+    font-size:20px;
+}
+
+.category-card:hover{
+    transform:translateY(-10px);
+    background:#ff6b35;
+    color:white;
+}
+
+
+
+.offer{
+    padding:80px 20px;
+    text-align:center;
+    background:linear-gradient(135deg,#ff6b35,#ff8c42);
+    color:white;
+}
+
+.offer h2{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.offer h3{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.offer p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.offer-btn{
+    background:white;
+    color:#ff6b35;
+    padding:14px 35px;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.offer-btn:hover{
+    background:#222;
+    color:white;
+}
+
+
+.features{
+    padding:70px 8%;
+}
+
+.features h2{
+    text-align:center;
+    margin-bottom:45px;
+    font-size:35px;
+}
+
+.feature-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.feature-card{
+    background:white;
+    text-align:center;
+    padding:35px 25px;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    transition:.3s;
+    font-size:45px;
+}
+
+.feature-card h3{
+    margin:20px 0 10px;
+    font-size:22px;
+}
+
+.feature-card p{
+    color:#666;
+    font-size:15px;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+    background:#ff6b35;
+    color:white;
+}
+
+.feature-card:hover p{
+    color:white;
+}
+
+.newsletter{
+    padding:70px 20px;
+    background:#f5f5f5;
+    text-align:center;
+}
+
+.newsletter h2{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.newsletter p{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.newsletter-box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.newsletter-box input{
+    width:350px;
+    max-width:90%;
+    padding:15px;
+    border:none;
+    border-radius:40px;
+    outline:none;
+    box-shadow:0 3px 12px rgba(0,0,0,.1);
+}
+
+.newsletter-box button{
+    padding:15px 30px;
+    border:none;
+    border-radius:40px;
+    background:#ff6b35;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.newsletter-box button:hover{
+    background:#222;
+}
+
+
+@media(max-width:768px){
+
+.hero{
+    height:70vh;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.categories h2,
+.features h2,
+.newsletter h2{
+    font-size:28px;
+}
+
+.offer h2{
+    font-size:34px;
+}
+
+.offer h3{
+    font-size:28px;
+}
+
+.newsletter-box{
+    flex-direction:column;
+    align-items:center;
+}
+
+.newsletter-box input{
+    width:100%;
+}
+
+}
